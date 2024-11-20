@@ -1,0 +1,56 @@
+* {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #333;
+  text-align: center;
+}
+
+p {
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  color: darkblue;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px 20px;
+  width: 100px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.my-ball {
+  background-color: darkblue;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* This will center the div horizontally */
+}
+
+#unique-ball {
+  background-color: crimson;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* This will center the div horizontally */
+}
