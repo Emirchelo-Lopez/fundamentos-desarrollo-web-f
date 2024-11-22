@@ -54,8 +54,6 @@ body {
 }
 
 .author-info {
-  display: flex;
-  align-items: center;
   margin-top: 20px;
 }
 
@@ -64,9 +62,12 @@ body {
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
+  vertical-align: middle;
 }
 
 .author-info p {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 800;
+  display: inline-block;
+  vertical-align: middle;
 }
