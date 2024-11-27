@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.different {
+  color: blueviolet;
+  background-color: #333;
+}
+
+p {
+  color: brown;
+}
+
+.different {
+  color: red !important;
+}
