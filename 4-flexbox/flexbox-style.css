@@ -12,12 +12,16 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   height: 100vh;
   border: solid;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: #0074d9ae;
+  width: 600px;
+  height: 600px;
+  column-gap: 10px;
 }
 
 .ball {
@@ -31,4 +35,8 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
+}
+
+.ball:nth-child(4) {
+  align-self: flex-end;
 }
