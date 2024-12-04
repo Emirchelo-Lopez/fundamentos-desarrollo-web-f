@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #151515;
+  color: #ffffff;
+  padding-top: 80px; /* Adjust this value based on the height of your header */
+}
+
+.display-font {
+  font-size: 3.576rem;
+}
+
+h2 {
+  font-size: 2.488rem;
+}
+
+h3 {
+  font-size: 2.074rem;
+}
+
+h4 {
+  font-size: 1.728rem;
+}
+
+h5 {
+  font-size: 1.44rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2; /* Ensure the header is above other content */
+  background-color: #151515;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+li img {
+  width: 40px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+header h5 span {
+  font-weight: 400;
+}
+
+.hero-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-content {
+  flex: 2;
+}
+
+.overflowed-img {
+  flex: 1;
+}
+
+div.hero-info > h1 > span {
+  text-decoration: underline;
+}
+
+div.hero-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
+div.hero-content > .hero-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.button-link {
+  border-radius: 5px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.pattern {
+  position: absolute;
+  top: 8%;
+  left: -2%;
+  width: 30%;
+  height: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.overflowed-img {
+  position: relative;
+  top: -160px;
+  z-index: -1;
+}
