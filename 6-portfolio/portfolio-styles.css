@@ -50,7 +50,6 @@ header {
   display: flex;
   justify-content: space-between;
   z-index: 2; /* Ensure the header is above other content */
-  background-color: #151515;
 }
 
 nav {
@@ -82,7 +81,12 @@ a {
 }
 
 header h5 span {
+  height: 100%;
   font-weight: 400;
+}
+
+header h5 {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero-section {
@@ -141,4 +145,83 @@ div.hero-content > .hero-info {
   position: relative;
   top: -160px;
   z-index: -1;
+  opacity: 0.7;
+}
+
+#features-section {
+  width: 1200px;
+  margin: 40px auto;
+}
+
+.features-content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.features-card {
+  flex: 1;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.features-card:hover .overlay-hovered {
+  opacity: 1;
+}
+
+.features-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-hovered {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.overlay-hovered-header,
+.overlay-hovered-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+.overlay-hovered-footer {
+  justify-content: flex-end;
+}
+
+.overlay-hovered-header button {
+  background-color: red;
+  color: #ffffff;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.overlay-hovered-footer i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  border-radius: 50%;
 }
