@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Satoshi", "Inter", "Helvetica", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: burlywood;
+}
+
+.container h1 {
+  font-size: 3em;
+}
+
+/* First breakpoint */
+
+@media screen and (max-width: 400px) {
+  .container {
+    background-color: blanchedalmond;
+  }
+}
+
+/* Second breakpoint */
+
+@media screen and (max-width: 200px) {
+  .container {
+    background-color: darkseagreen;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+}
