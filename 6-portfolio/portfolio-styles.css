@@ -149,14 +149,14 @@ div.hero-content > .hero-info {
 }
 
 #features-section {
-  width: 1200px;
+  max-width: 1200px;
   margin: 40px auto;
 }
 
 .features-content {
   display: flex;
   justify-content: space-between;
-  column-gap: 20px;
+  gap: 20px;
 }
 
 .features-card {
@@ -239,7 +239,7 @@ div.hero-content > .hero-info {
 
   .features-card {
     flex: none;
-    width: 49%;
+    width: 46%;
   }
 }
 
