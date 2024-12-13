@@ -225,3 +225,38 @@ div.hero-content > .hero-info {
   padding: 20px;
   border-radius: 50%;
 }
+
+/* First break point */
+
+@media screen and (max-width: 992px) {
+  /* body {
+    background-color: tomato;
+  } */
+
+  .features-content {
+    flex-wrap: wrap;
+  }
+
+  .features-card {
+    flex: none;
+    width: 49%;
+  }
+}
+
+/* Second break point */
+
+@media screen and (max-width: 576px) {
+  /* body {
+    background-color: cadetblue;
+  } */
+
+  .features-content {
+    flex-wrap: wrap;
+  }
+
+  .features-card {
+    flex: none;
+    width: 100%;
+    margin: auto;
+  }
+}
