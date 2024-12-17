@@ -137,21 +137,20 @@ button {
   gap: 32px;
 }
 
+.project-card > .project-info > .button-group {
+  justify-content: flex-start;
+}
+
 .img-group {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-.img-group:hover .img-overlay {
-  opacity: 1;
-}
-
 .img-overlay {
-  opacity: 0;
+  display: none;
   transition: opacity 300ms ease-in-out;
 
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
 
@@ -315,6 +314,19 @@ header .social-media-list {
 
   #hero-image {
     bottom: 150px;
+  }
+
+  .img-overlay {
+    display: flex;
+    opacity: 0;
+  }
+
+  .img-group:hover .img-overlay {
+    opacity: 1;
+  }
+
+  .project-card > .project-info > .button-group {
+    display: none;
   }
 }
 
