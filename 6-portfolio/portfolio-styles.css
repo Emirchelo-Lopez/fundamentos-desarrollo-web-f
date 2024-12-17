@@ -45,7 +45,7 @@ header {
   text-align: center;
 }
 
-.hero-content {
+#hero-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,6 +54,10 @@ header {
 
 .hero-content img {
   width: 256px;
+}
+
+.hero-content span {
+  text-decoration: underline;
 }
 
 .contact-form input,
@@ -199,6 +203,7 @@ footer {
   text-align: center;
   width: 100%;
   flex-grow: 1;
+  padding: 0 24px;
 }
 
 .social-media {
@@ -214,20 +219,81 @@ footer {
   gap: 24px;
 }
 
-/* Breakpoints */
-
-/* Large devices (desktops, 1440px and up) */
-@media (min-width: 1440px) {
+header .social-media-list {
+  display: none;
 }
 
+/* Breakpoints */
+
 /* Medium devices (tablets, 834px and up) */
-@media (min-width: 834px) {
+@media (min-width: 768px) {
   body {
     margin: 0px 64px 32px 64px;
   }
 
   #hero-section {
+    margin-top: 97px;
     flex-direction: row;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 24px;
+  }
+
+  #hero-info {
+    align-items: flex-start;
+    text-align: start;
+    justify-content: center;
+    width: 50%;
+  }
+
+  #hero-image {
+    width: 50%;
+    position: relative;
+    bottom: 100px;
+    height: fit-content;
+  }
+
+  #hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .button-group {
+    gap: 16px;
+  }
+
+  header {
+    padding: 24px 64px;
+  }
+
+  .social-media {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header .social-media-list {
+    display: flex;
+  }
+
+  header > svg {
+    display: none;
+  }
+}
+
+/* Large devices (desktops, 1440px and up) */
+@media (min-width: 1280px) {
+  body {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+
+  header {
+    max-width: 1200px;
+    padding: 24px;
   }
 }
 
