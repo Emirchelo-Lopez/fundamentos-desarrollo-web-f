@@ -295,6 +295,27 @@ header .social-media-list {
     max-width: 1200px;
     padding: 24px;
   }
+
+  #contact-section {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: start;
+    column-gap: 56px;
+  }
+
+  .contact-header {
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  #hero-info {
+    height: fit-content;
+    padding-top: 100px;
+  }
+
+  #hero-image {
+    bottom: 150px;
+  }
 }
 
 /* Typescales */
